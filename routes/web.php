@@ -11,13 +11,29 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/ind', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+// New routes for user functions
+
+Route::get('/', function () {
+    return view('user.index');
+});
+
+Route::get('/user_show_gallery', 'GalleryController@user_show_gallery')->name('user_show_gallery');
+Route::get('/user_show_newsfeed', 'NewsfeedController@user_show_newsfeed')->name('user_newsfeed');
+Route::get('/user_show_public', 'PublicController@user_show_public')->name('user_show_public');
+Route::get('/user_search_bus', 'BusController@user_search_bus')->name('user_search_bus');
+
+
+
+
+
+

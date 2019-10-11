@@ -21,8 +21,17 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+
+
     public function index()
+    /**
+     * Main page redirect when login of the user
+     *
+     * It redicts to user folder in view and index blade php
+     */
     {
-        return view('home');
+        return view('user.index');
     }
+
+    
 }
