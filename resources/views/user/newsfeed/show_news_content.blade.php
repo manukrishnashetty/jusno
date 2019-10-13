@@ -9,13 +9,13 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 	<!-- Tooltip plugin (zebra) css file -->
-	<link rel="stylesheet" type="text/css" href="plugins\zebra-tooltip\zebra_tooltips.min.css">
+	<link rel="stylesheet" type="text/css" href="{{ asset('user/newsfeed/plugins\zebra-tooltip\zebra_tooltips.min.css') }}">
 
 	<!-- Ideabox main theme css file. you have to add all pages -->
-	<link rel="stylesheet" type="text/css" href="css\main-style.css">
+	<link rel="stylesheet" type="text/css" href="{{ asset('user/newsfeed/css\main-style.css') }}">
 
 	<!-- Ideabox responsive css file -->
-	<link rel="stylesheet" type="text/css" href="css\responsive-style.css">
+	<link rel="stylesheet" type="text/css" href="{{ asset('user/newsfeed/css\responsive-style.css') }}">
 </head>
 
  @extends('user.layouts.master')
@@ -434,13 +434,13 @@
 
 	<div class="overlay"></div>
 
-	<script src="js\jquery-3.2.1.min.js"></script>
+	<script src="{{ asset('user/newsfeed/js\jquery-3.2.1.min.js') }}"></script>
 
 	<!-- Tooltip plugin (zebra) js file -->
-	<script src="plugins\zebra-tooltip\zebra_tooltips.min.js"></script>
+	<script src="{{ asset('user/newsfeed/plugins\zebra-tooltip\zebra_tooltips.min.js') }}"></script>
 
 	<!-- Ideabox theme js file. you have to add all pages. -->
-	<script src="js\main-script.js"></script>
+	<script src="{{ asset('user/newsfeed/js\main-script.js') }}"></script>
 
 @endsection
 </body>
